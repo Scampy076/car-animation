@@ -1,20 +1,22 @@
 function setup() {
   createCanvas(1200, 800);
   background("yellow");
-}
-let xPos = 200
-let yPos = 600
-
-function draw() {
-
-fill('grey')
-
- rect(xPos - 5, yPos + 23, 55, 15, 5, 5, 15, 5);
-
-fill(color(0, 200, 500, 500));
-
-let offset1 = -80
-let offset2 = -150
+ }
+ let xPos = 200
+ let yPos = 600
+ let penis = 655
+ let offset1 = -80
+ let offset2 = -150
+ 
+ function draw() {
+ 
+ background("yellow");
+ fill('grey')
+ stroke(51);
+ 
+  rect(xPos - 5, yPos + 23, 55, 15, 5, 5, 15, 5);
+ 
+ fill(color(0, 200, 500, 500));
  rect(xPos, yPos - 80, 700, 110, 80, 80, 3, 3);
  triangle(xPos, yPos - 150, xPos + 100, yPos - 150, xPos + 50, yPos - 200)
  triangle(xPos - 100, yPos - 200, xPos + 100, yPos - 150, xPos, yPos - 150)
@@ -50,18 +52,16 @@ fill('black')
  rect(xPos + 655, yPos - 40, 45, 50, 5, 10, 5, 5)
 
 fill('gray')
-
-let offset = 655
- rect(xPos + offset, yPos - 40, 45, 3, 5, 10, 5, 5)
- rect(xPos + offset, yPos - 35, 45, 3, 5, 10, 5, 5)
- rect(xPos + offset, yPos - 30, 45, 3, 5, 10, 5, 5)
- rect(xPos + offset, yPos - 25, 45, 3, 5, 10, 5, 5)
- rect(xPos + offset, yPos - 20, 45, 3, 5, 10, 5, 5)
- rect(xPos + offset, yPos - 15, 45, 3, 5, 10, 5, 5)
- rect(xPos + offset, yPos - 10, 45, 3, 5, 10, 5, 5)
- rect(xPos + offset, yPos - 5, 45, 3, 5, 10, 5, 5)
- rect(xPos + offset, yPos, 45, 3, 5, 10, 5, 5)
- rect(xPos + offset, yPos + 5, 45, 3, 5, 10, 5, 5)
+rect(xPos + penis, yPos - 40, 45, 3, 5, 10, 5, 5)
+ rect(xPos + penis, yPos - 35, 45, 3, 5, 10, 5, 5)
+ rect(xPos + penis, yPos - 30, 45, 3, 5, 10, 5, 5)
+ rect(xPos + penis, yPos - 25, 45, 3, 5, 10, 5, 5)
+ rect(xPos + penis, yPos - 20, 45, 3, 5, 10, 5, 5)
+ rect(xPos + penis, yPos - 15, 45, 3, 5, 10, 5, 5)
+ rect(xPos + penis, yPos - 10, 45, 3, 5, 10, 5, 5)
+ rect(xPos + penis, yPos - 5, 45, 3, 5, 10, 5, 5)
+ rect(xPos + penis, yPos, 45, 3, 5, 10, 5, 5)
+ rect(xPos + penis, yPos + 5, 45, 3, 5, 10, 5, 5)
  circle(xPos + 100, yPos, 90);
  circle(xPos + 600, yPos, 90);
  line(xPos + 300, yPos + 12, xPos + 300, yPos - 174);
@@ -88,6 +88,9 @@ noStroke();
  circle(xPos - 15, yPos + 20, 30)
  circle(xPos - 50, yPos + 10, 50)
  circle(xPos - 95, yPos - 20, 70)
- xPos = xPos + 1
-yPos = yPos + 0.05
+xPos = xPos + 1
+yPos = yPos + 0.01
+penis = penis + 0.003
+offset1 = offset1 + 0.0000000000000003
+offset2 = offset2 + 0.0000000000000003
 }
